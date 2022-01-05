@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://windbnb-04uu.onrender.com">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/satellites7/windbnb">
       Solution
     </a>
     <span> | </span>
@@ -29,7 +29,7 @@
 ## Overview
 
 ![screenshot](https://github.com/satellites7/image/blob/main/windbnb.png)
-![screenshot](https://github.com/satellites7/image/blob/main/windbnb(iPhone%20X).png)
+![screenshot](https://github.com/satellites7/image/blob/main/windbnb-phone.png)
 
 
 
