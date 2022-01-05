@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap";
+import Cards from './component/Cards/Cards'
+
+import Nav from './component/Nav/Nav'
+import { useState } from 'react';
+
 
 function App() {
+  
+  const [loc, setLoc] = useState('')
+  const [num, setNum] = useState(0)
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav setLoc={setLoc} setNum={setNum} />
+      <Cards loc={loc} num={num}/>
+      <p className="bottom">created by <span style={{fontWeight:700}}>satellites7</span> - devChallenges.io</p>
     </div>
   );
 }
