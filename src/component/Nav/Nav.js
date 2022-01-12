@@ -19,11 +19,11 @@ function Nav(props) {
                         <img className='logo' src={svg} alt="" />
                     </div>
                     <div className="col-4 msDiv">
-                        <div class="input-group mb-3" onClick={showModal}>
-                            <input type="text" class="form-control" placeholder="Add location" aria-label="location" aria-describedby="basic-addon1" id='input1' />
-                            <input type="text" class="form-control" placeholder="Add guests" aria-label="guests" aria-describedby="basic-addon1" id='input2' />
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
-                                <span class="material-icons">
+                        <div className="input-group mb-3" onClick={showModal}>
+                            <input type="text" className="form-control" placeholder="Add location" aria-label="location" aria-describedby="basic-addon1" id='input1' />
+                            <input type="text" className="form-control" placeholder="Add guests" aria-label="guests" aria-describedby="basic-addon1" id='input2' />
+                            <button className="btn btn-outline-secondary" type="button" id="button-addon2">
+                                <span className="material-icons">
                                     search
                                 </span>
                             </button>
@@ -76,17 +76,17 @@ function Example(props) {
                         <Row>
                             <Col xs={6} md={4} style={{ position: 'relative' }}>
                                 <span className='input-name'>Location</span>
-                                <input type="text" class="form-control" placeholder="Add location" aria-label="location" 
+                                <input type="text" className="form-control" placeholder="Add location" aria-label="location" 
                                 aria-describedby="basic-addon1" id="input3" value={location} onChange={(e) => {setLocation(e.target.value)}} />
                                 <ListGroup variant="flush" className='list-location' style={{ cursor: ' pointer' }}>
                                     <ListGroup.Item>
-                                        <span class="material-icons icon-location">
+                                        <span className="material-icons icon-location">
                                             place
                                         </span>
                                         <span onClick={chooseLocation}>Helsinki, Finland</span>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
-                                        <span class="material-icons icon-location">
+                                        <span className="material-icons icon-location">
                                             place
                                         </span>
                                         <span onClick={chooseLocation}>
@@ -94,13 +94,13 @@ function Example(props) {
                                         </span>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
-                                        <span class="material-icons icon-location">
+                                        <span className="material-icons icon-location">
                                             place
                                         </span>
                                         <span onClick={chooseLocation}>Oulu, Finland</span>
                                     </ListGroup.Item>
                                     <ListGroup.Item>
-                                        <span class="material-icons icon-location">
+                                        <span className="material-icons icon-location">
                                             place
                                         </span>
                                         <span onClick={chooseLocation}>Vaasa, Finland</span>
@@ -109,26 +109,26 @@ function Example(props) {
                             </Col>
                             <Col xs={6} md={4} style={{ position: 'relative' }}>
                                 <span className='input-name'>Guests</span>
-                                <input type="number" class="form-control" placeholder="Add guests" aria-label="guests"
+                                <input type="number" className="form-control" placeholder="Add guests" aria-label="guests"
                                  aria-describedby="basic-addon1" id="input4" value={children + adluts} onChange={(e) => {setTotal(e.target.value)}} />
                                 <ListGroup variant="flush" className='list-location'>
                                     <ListGroup.Item>Adults
                                         <p className='guest-p'>Ages 13 or above</p>
-                                        <span class="material-icons op-icon" onClick={() => {setAdluts(ref1.current.innerHTML*1 - 1)}}>
+                                        <span className="material-icons op-icon" onClick={() => {setAdluts(ref1.current.innerHTML*1 - 1)}}>
                                             remove_circle_outline
                                         </span>
                                         <span style={{ padding: ' 0 15px ' }} ref={ref1}>{adluts}</span>
-                                        <span class="material-icons op-icon" onClick={() => {setAdluts(ref1.current.innerHTML*1 + 1)}}>
+                                        <span className="material-icons op-icon" onClick={() => {setAdluts(ref1.current.innerHTML*1 + 1)}}>
                                             add_circle_outline
                                         </span>
                                     </ListGroup.Item>
                                     <ListGroup.Item>Children
                                         <p className='guest-p'>Ages 2-12</p>
-                                        <span class="material-icons op-icon" onClick={() => {setChildren(ref2.current.innerHTML*1 - 1)}}>
+                                        <span className="material-icons op-icon" onClick={() => {setChildren(ref2.current.innerHTML*1 - 1)}}>
                                             remove_circle_outline
                                         </span>
                                         <span style={{ padding: ' 0 15px ' }} ref={ref2}>{children}</span>
-                                        <span class="material-icons op-icon" onClick={() => {setChildren(ref2.current.innerHTML*1 + 1)}}>
+                                        <span className="material-icons op-icon" onClick={() => {setChildren(ref2.current.innerHTML*1 + 1)}}>
                                             add_circle_outline
                                         </span>
                                     </ListGroup.Item>
@@ -136,7 +136,7 @@ function Example(props) {
                             </Col>
                             <Col xs={6} md={4}>
                                 <Button variant="success" className='search-btn'>
-                                    <span class="material-icons" id='icon-search' onClick={() => {}}>
+                                    <span className="material-icons" id='icon-search' onClick={() => {}}>
                                         search
                                     </span>Search</Button>
                             </Col>
