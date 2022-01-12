@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://windbnb-04uu.onrender.com">
+    <a href="https://windbnb-orpin.vercel.app/">
       Demo
     </a>
     <span> | </span>
