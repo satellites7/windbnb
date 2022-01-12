@@ -30,14 +30,14 @@ const Cards = (props) => {
                                             {item.superHost ? <><span className='ifSuperHost'>surper Host</span> <span className='span-type' style={{ marginLeft: '10px' }}>{item.type}</span></>
                                                 : <span className='span-type'>{item.type}</span>}
                                             <span className="span-rating">
-                                                <span class="material-icons md16">
+                                                <span className="material-icons md16">
                                                     star
                                                 </span>
                                                 {' '}
                                                 {item.rating}
-                                            </span>
-                                            <p style={{ marginTop: "12px" }}>{item.title}</p>
+                                            </span>                                           
                                         </Card.Text>
+                                        <p style={{ marginTop: "12px" }}>{item.title}</p>
                                     </Card.Body>
                                 </Card>
                             )
